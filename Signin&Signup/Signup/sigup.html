@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up for GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signin-prompt">
+        Already have an account? <a href="#" class="signin-link">Sign in →</a>
+    </div>
+
+    <div class="signup-container">
+        <h1>Sign up for GitHub</h1>
+
+        <form>
+            <button type="button" class="btn btn-oauth">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8.15991 6.54543V9.64362H12.4654C12.2763 10.64 11.709 11.4837 10.8581 12.0509L13.4544 14.0655C14.9671 12.6692 15.8399 10.6182 15.8399 8.18188C15.8399 7.61461 15.789 7.06911 15.6944 6.54552L8.15991 6.54543Z" fill="#4285F4"/>
+                    <path d="M3.6764 9.52268L3.09083 9.97093L1.01807 11.5855C2.33443 14.1963 5.03241 16 8.15966 16C10.3196 16 12.1305 15.2873 13.4542 14.0655L10.8578 12.0509C10.1451 12.5309 9.23598 12.8218 8.15966 12.8218C6.07967 12.8218 4.31245 11.4182 3.67967 9.5273L3.6764 9.52268Z" fill="#34A853"/>
+                    <path d="M1.01803 4.41455C0.472607 5.49087 0.159912 6.70543 0.159912 7.99995C0.159912 9.29447 0.472607 10.509 1.01803 11.5854C1.01803 11.5926 3.6799 9.51991 3.6799 9.51991C3.5199 9.03991 3.42532 8.53085 3.42532 7.99987C3.42532 7.46889 3.5199 6.95983 3.6799 6.47983L1.01803 4.41455Z" fill="#FBBC05"/>
+                    <path d="M8.15982 3.18545C9.33802 3.18545 10.3853 3.59271 11.2216 4.37818L13.5125 2.0873C12.1234 0.792777 10.3199 0 8.15982 0C5.03257 0 2.33443 1.79636 1.01807 4.41455L3.67985 6.48001C4.31254 4.58908 6.07983 3.18545 8.15982 3.18545Z" fill="#EA4335"/>
+                </svg>
+                Continue with Google
+            </button>
+
+            <button type="button" class="btn btn-oauth">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M11.182 3.333c.606 0 1.198.236 1.632.67.434.434.67 1.026.67 1.632v4.73c0 .606-.236 1.198-.67 1.632-.434.434-1.026.67-1.632.67H4.818c-.606 0-1.198-.236-1.632-.67-.434-.434-.67-1.026-.67-1.632v-4.73c0-.606.236-1.198.67-1.632.434-.434 1.026-.67 1.632-.67h6.364zm0-1.333H4.818C3.814 2 2.851 2.421 2.151 3.121c-.7.7-1.121 1.663-1.121 2.667v4.73c0 1.004.421 1.967 1.121 2.667.7.7 1.663 1.121 2.667 1.121h6.364c1.004 0 1.967-.421 2.667-1.121.7-.7 1.121-1.663 1.121-2.667v-4.73c0-1.004-.421-1.967-1.121-2.667-.7-.7-1.663-1.121-2.667-1.121zM8 5.333c-.707 0-1.386.281-1.886.781S5.333 7.293 5.333 8c0 .707.281 1.386.781 1.886S7.293 10.667 8 10.667c.707 0 1.386-.281 1.886-.781S10.667 8.707 10.667 8c0-.707-.281-1.386-.781-1.886S8.707 5.333 8 5.333zm0 1.334c.354 0 .693.14.943.391.25.25.39.589.39.943 0 .354-.14.693-.39.943-.25.25-.589.39-.943.39-.354 0-.693-.14-.943-.39-.25-.25-.39-.589-.39-.943 0-.354.14-.693.39-.943.25-.25.589-.391.943-.391zm3.333-.667c-.221 0-.433-.088-.589-.244-.156-.156-.244-.368-.244-.589 0-.221.088-.433.244-.589.156-.156.368-.244.589-.244.221 0 .433.088.589.244.156.156.244.368.244.589 0 .221-.088.433-.244.589-.156.156-.368.244-.589.244z"/>
+                </svg>
+                Continue with Apple
+            </button>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email<sup>*</sup></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password<sup>*</sup></label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <p class="hint">Password should be at least 15 characters OR at least 8 characters including a number and a lowercase letter.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username<sup>*</sup></label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <p class="hint">Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Your Country/Region<sup>*</sup></label>
+                <select id="country" name="country" required>
+                    <option value="TH">Thailand</option>
+                    <option value="US">United States</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="JP">Japan</option>
+                </select>
+                <p class="hint">For compliance reasons, we're required to collect country information to send you occasional updates and announcements.</p>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="email_preferences">
+                    <span>Email preferences</span>
+                </label>
+                <p class="checkbox-description">Receive occasional product updates and announcements</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Create account <span class="arrow">→</span>
+            </button>
+
+            <p class="terms">
+                By creating an account, you agree to the <a href="#">Terms of Service</a>. For more information about GitHub's privacy practices, see the <a href="#">GitHub Privacy Statement</a>. We'll occasionally send you account-related emails.
+            </p>
+        </form>
+    </div>
+</body>
+</html>

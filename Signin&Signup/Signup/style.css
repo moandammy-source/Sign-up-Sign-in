@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mona Sans', sans-serif;
+    background: #f6f8fa;
+    min-height: 100vh;
+    padding: 20px;
+    color: #1f2328;
+}
+
+.signin-prompt {
+    text-align: right;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    color: #656d76;
+}
+
+.signin-link {
+    color: #0969da;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.signin-link:hover {
+    text-decoration: underline;
+}
+
+.signup-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px 30px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #1f2328;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 6px;
+    border: 1px solid #d1d9e0;
+    cursor: pointer;
+    transition: all 0.15s;
+    background: white;
+    color: #1f2328;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-oauth {
+    margin-bottom: 12px;
+}
+
+.btn-oauth:hover {
+    background: #f6f8fa;
+    border-color: #b8bfc6;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: #d1d9e0;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.divider span {
+    color: #656d76;
+    font-size: 14px;
+    background: white;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1f2328;
+}
+
+label sup {
+    color: #cf222e;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1f2328;
+    background: #ffffff;
+    border: 1px solid #d1d9e0;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+select:focus {
+    border-color: #0969da;
+    box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.3);
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23656D76' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+}
+
+.hint {
+    font-size: 12px;
+    color: #656d76;
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.checkbox-description {
+    font-size: 12px;
+    color: #656d76;
+    margin-top: 4px;
+    margin-left: 24px;
+    font-weight: 400;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background: #1f2328;
+    border-color: rgba(31, 35, 40, 0.15);
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background: #2c3137;
+}
+
+.btn-primary .arrow {
+    margin-left: 4px;
+}
+
+.terms {
+    font-size: 12px;
+    color: #656d76;
+    line-height: 1.6;
+}
+
+.terms a {
+    color: #0969da;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .signup-container {
+        padding: 30px 20px;
+    }
+}
